@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aquamarine;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+}
+section:nth-child(1),section:nth-child(3) {
+    width: 20vw;
+    border: 1px solid black;
+    background-color: grey
+}
+section {
+    height: 80vh;
+}
+.centro {
+    width: 60vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 228, 228);
+    align-content: space-around;
+    justify-content: space-between;
+}
+.centro article {
+    border: 3px solid green;
+    height: 30vh;
+}
+
+@media (max-width: 720px) {
+    main {
+      flex-direction: column;
+    }
+    .centro, section:nth-child(1), section:nth-child(3) {
+        width: 100vw;
+        height: 30vh;
+    }
+}
